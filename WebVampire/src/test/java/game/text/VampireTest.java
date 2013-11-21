@@ -137,24 +137,6 @@ public class VampireTest {
 		checkConnections("boat", "lake", "south", game, false);
 		checkConnections("overhang", "gallery", "down", game, false);
 		checkConnections("storeroom", "study", "up", game, false);
-//		
-		
-//		game.getPlace("library").connect(game.getPlace("armory"), game.getDirection("east"));
-//		game.getPlace("armory").connect(game.getPlace("tower"), game.getDirection("east"));
-//		game.getPlace("hidden corridor").connect(game.getPlace("alchemist's lab"), game.getDirection("north"));
-//		game.getPlace("alchemist's lab").connect(game.getPlace("storeroom"), game.getDirection("north"));
-//		game.getPlace("lower tower").connect(game.getPlace("chapel"), game.getDirection("south"));
-//		game.getPlace("secret passage").connect(game.getPlace("underground lake chamber"), game.getDirection("north"));
-//		game.getPlace("secret passage").connect(game.getPlace("torture chamber"), game.getDirection("west"));
-		
-//		game.getPlace("_fireplace").setConnection(game.getDirection("south"), game.getPlace("study"));
-//		game.getPlace("storeroom").setConnection(game.getDirection("up"), game.getPlace("study"));
-//		game.getPlace("lower tower").setConnection(game.getDirection("up"), game.getPlace("tower"));
-//		game.getPlace("chapel").setConnection(game.getDirection("up"), game.getPlace("armory"));
-//		game.getPlace("secret passage").setConnection(game.getDirection("south"), game.getPlace("_fireplace"));
-//		game.getPlace("torture chamber").setConnection(game.getDirection("west"), game.getPlace("alchemist's lab"));
-//		game.getPlace("boat").setConnection(game.getDirection("south"), game.getPlace("lake"));
-//		game.getPlace("overhang").setConnection(game.getDirection("down"), game.getPlace("gallery"));
 		
 	}
 	
@@ -185,6 +167,8 @@ public class VampireTest {
 						+ "to '" + to.getName() + "' via Direction '"+ via.getName() + "'";
 				assertTrue(errorMessage,from.getConnection(via).equals(to));
 			}
+			
+			
 //				else{
 //				String dir = via.getName();
 //				if(dir == null)
